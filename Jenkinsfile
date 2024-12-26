@@ -16,12 +16,13 @@ pipeline{
         echo "Deploying"
       }
     }
-    post{
-      success{
-        echo "Your pipeline is success"
-      }
-      failure{
-        echo "pipeline failed"
-      }
+  }
+  post{
+    success{
+      echo "Your pipeline is success"
     }
+    failure{
+      echo "pipeline failed"
+    }
+  }
 }
